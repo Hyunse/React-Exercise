@@ -4,8 +4,7 @@ import App from '../App';
 import CommentBox from '../CommentBox';
 
 it('shows a comment box', () => {
-  console.log('aa');
   const wrapped =  shallow(<App />);
 
-  expect(wrapped.find(CommentBox)).toEqual(1);
+  expect(wrapped.find(CommentBox).length).toEqual(1);
 });
